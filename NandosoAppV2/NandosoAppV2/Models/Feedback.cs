@@ -8,7 +8,7 @@ namespace NandosoAppV2.Models
     public class Feedback
     {
         public int ID { get; set; }
-        public int rating { get; set; }
+        public string customerName { get; set; }
         public string comment { get; set; }
     }
 }

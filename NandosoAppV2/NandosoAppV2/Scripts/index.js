@@ -3,7 +3,6 @@
 });
 
 function loadSpecials() {
-
     SpecialsModule.getSpecials(getSpecialsTable);
 }
 
