@@ -13,6 +13,6 @@ namespace NandosoAppV2.Models
         public double price { get; set; }
         public string description { get; set; }
         public int specialDate { get; set; }
-
+        public int isPremium { get; set; }
     }
 }
