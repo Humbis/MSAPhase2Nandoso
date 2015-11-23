@@ -11,20 +11,24 @@ function getSpecialsTable(specialsList) {
     var specialsTable = document.getElementById("specialsList");
 
     for (i = 0; i < specialsList.length; i++) {
-        var row = document.createElement("tr"); //make a row
+        if (Date.getDay() == specialsList[i].specialDate) {
 
-        var name = document.createElement("td"); //make a data entrie
-        name.innerHTML = specialsList[i].name;   //set it to the name in the list of specials
-        row.appendChild(name);                   //put it into the row
 
-        var price = document.createElement("td");
-        price.innerHTML = specialsList[i].price;
-        row.appendChild(price);
+            var row = document.createElement("tr"); //make a row
 
-        var description = document.createElement("td");
-        description.innerHTML = specialsList[i].description;
-        row.appendChild(description);
+            var name = document.createElement("td"); //make a data entrie
+            name.innerHTML = specialsList[i].name;   //set it to the name in the list of specials
+            row.appendChild(name);                   //put it into the row
 
-        specialsTable.appendChild(row);                  //put row into the table
+            var price = document.createElement("td");
+            price.innerHTML = specialsList[i].price;
+            row.appendChild(price);
+
+            var description = document.createElement("td");
+            description.innerHTML = specialsList[i].description;
+            row.appendChild(description);
+
+            specialsTable.appendChild(row);                  //put row into the table
+        }
     }
 }
