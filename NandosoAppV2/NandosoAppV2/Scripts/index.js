@@ -14,8 +14,8 @@ function getSpecialsTable(specialsList) {
         var row = document.createElement("tr"); //make a row
 
         var name = document.createElement("td"); //make a data entrie
-        name.innerHTML = specialsList[i].LastName;   //set it to the name in the list of students
-        row.appendChild(name);                   //slap it into the row
+        name.innerHTML = specialsList[i].LastName;   //set it to the name in the list of specials
+        row.appendChild(name);                   //put it into the row
 
         var price = document.createElement("td");
         price.innerHTML = specialsList[i].FirstMidName;
@@ -25,6 +25,6 @@ function getSpecialsTable(specialsList) {
         description.innerHTML = specialsList[i].EnrollmentDate;
         row.appendChild(description);
 
-        specialsTable.appendChild(row);                  //slap row into the table
+        specialsTable.appendChild(row);                  //put row into the table
     }
 }
