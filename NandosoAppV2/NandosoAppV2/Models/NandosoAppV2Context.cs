@@ -20,6 +20,7 @@ namespace NandosoAppV2.Models
         }
         public NandosoAppV2Context() : base("name=NandosoAppV2Context")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<NandosoAppV2Context, MyConfiguration>());
         }
 
         public System.Data.Entity.DbSet<NandosoAppV2.Models.Specials> Specials { get; set; }
