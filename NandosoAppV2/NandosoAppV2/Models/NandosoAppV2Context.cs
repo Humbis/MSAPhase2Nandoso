@@ -7,6 +7,7 @@ using System.Data.Entity.Migrations;
 
 namespace NandosoAppV2.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoAppV2Context : DbContext
     {
         public class MyConfiguration : DbMigrationsConfiguration<NandosoAppV2Context>
