@@ -9,9 +9,9 @@ function loadSpecials() {
 
 function getSpecialsTable(specialsList) {
     var specialsTable = document.getElementById("specialsList");
+    var d = new Date;
     for (i = 0; i < specialsList.length; i++) {
-        if (Date.getDay() == specialsList[i].specialDate) {
-
+        if (d.getDay() == specialsList[i].specialDate) {
 
             var row = document.createElement("tr"); //make a row
 
