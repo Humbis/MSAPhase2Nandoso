@@ -19,6 +19,16 @@
             </ul>
         </div>
     </div>
+    <p style="text-align:center; font-size:larger">Feedback and Comments</p>
+    <form name="feedbackForm" id="feedbackForm" style="text-align:center">
+        Your Name:<br />
+        <input type="text" name="customerName" id="customerName"/>
+        <br />Your Comment:<br />
+        <textarea name="comment" id="comment"></textarea> <br />
+        <input type="button" name="submit" value=" Submit " onclick="submitFeedback()"/>
+        <br />
+    </form>
+    <script id="submitComment" src="Scripts/submitComment.js"></script>
     <table class="table table-striped spaced-table">
         <thead>
             <tr>
