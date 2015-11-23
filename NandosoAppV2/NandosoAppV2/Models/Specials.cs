@@ -12,7 +12,7 @@ namespace NandosoAppV2.Models
         public string name { get; set; }
         public double price { get; set; }
         public string description { get; set; }
-        public DayOfWeek specialDate { get; set; }
+        public int specialDate { get; set; }
 
     }
 }
