@@ -1,6 +1,6 @@
-﻿window.fbAsyncInit = function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
     loadSpecials();
-};
+});
 
 function loadSpecials() {
     SpecialsModule.getSpecials(getSpecialsTable);
