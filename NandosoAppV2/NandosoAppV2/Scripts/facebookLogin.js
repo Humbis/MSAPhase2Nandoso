@@ -9,7 +9,6 @@ function statusChangeCallback(response) {
     if (response.status === 'connected') {
         // Logged into your app and Facebook.
         testAPI();
-        location.reload();
     } else if (response.status === 'not_authorized') {
         // The person is logged into Facebook, but not your app.
         document.getElementById('status').innerHTML = 'Please log ' +
@@ -29,6 +28,7 @@ function checkLoginState() {
     FB.getLoginStatus(function (response) {
         statusChangeCallback(response);
     });
+    location.reload();
 }
 
 window.fbAsyncInit = function () {
