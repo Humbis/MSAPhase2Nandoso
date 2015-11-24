@@ -4,7 +4,7 @@
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "http://msanandosoapp.azurewebsites.net/api/Feedbacks",
+                url: "https://msanandosoapp.azurewebsites.net/api/Feedbacks",
                 success: function (data) {
                     callback(data);
                 }
