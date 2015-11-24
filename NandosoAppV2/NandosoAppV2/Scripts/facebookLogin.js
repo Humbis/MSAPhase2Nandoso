@@ -24,10 +24,17 @@ function statusChangeCallback(response) {
 // This function is called when someone finishes with the Login
 // Button.  See the onlogin handler attached to it in the sample
 // code below.
+var isLoggedIn = 0;
 function checkLoginState() {
     FB.getLoginStatus(function (response) {
         statusChangeCallback(response);
-        loadSpecials();
+        if (response.status == 'connected' && isLoggedIn == 0) {
+            loadSpecials(1);
+            isLoggedIn = 1;
+        } else if (response.status != 'connected') {
+            isLoggedIn = 0;
+        }
+        
     });
 }
 
