@@ -11,8 +11,14 @@ function getSpecialsTable(specialsList) {
     var d = new Date;
     for (i = 0; i < specialsList.length; i++) {
         if (d.getDay() == specialsList[i].specialDate) {
-            var response = FB.getLoginStatus();
-            if (response.status == "connected" || specialsList[i].isPremium == 0) {
+            var loggedIn = FB.getLoginStatus(function (response) {
+                if (response.status == 'connected') {
+                    return true;
+                } else {
+                    return false
+                }
+            });
+            if (loggenIn == true || specialsList[i].isPremium == 0) {
                 var row = document.createElement("tr"); //make a row
 
                 var name = document.createElement("td"); //make a data entrie
