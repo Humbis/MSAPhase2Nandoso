@@ -9,7 +9,7 @@ function submitFeedback() {
     $.ajax({
         type: "POST",
         data: "{" + feedback + "}" ,
-        url: "http://msanandosoapp.azurewebsites.net/api/Feedbacks",
+        url: "https://msanandosoapp.azurewebsites.net/api/Feedbacks",
         contentType: "application/json",
         success: function(){
             location.reload();
