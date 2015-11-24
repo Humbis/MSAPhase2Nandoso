@@ -126,6 +126,9 @@
     <Content Include="FeedbackPage.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\chicken-bacon-butter-small-2.jpg" />
+    <Content Include="img\chickenrice.jpg" />
+    <Content Include="img\honey-lime-sriracha-chicken-skewers-ftr.jpg" />
     <Content Include="index.html" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
