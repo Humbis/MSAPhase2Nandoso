@@ -18,7 +18,7 @@ function getSpecialsTable(specialsList) {
                     return false
                 }
             });
-            if (loggenIn == true || specialsList[i].isPremium == 0) {
+            if (loggedIn == true || specialsList[i].isPremium == 0) {
                 var row = document.createElement("tr"); //make a row
 
                 var name = document.createElement("td"); //make a data entrie
