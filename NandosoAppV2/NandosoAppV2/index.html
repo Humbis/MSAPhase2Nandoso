@@ -23,8 +23,12 @@
             </ul>
         </div>
     </div>
-    <div id="status"><fb:login-button scope="public_profile,email"
-                     onlogin="checkLoginState();"></fb:login-button></div>
+    <div id="fbContainer">
+        <div id="status"></div>
+        <fb:login-button scope="public_profile,email"
+                 onlogin="checkLoginState();"></fb:login-button>
+    </div>
+    
     <p style="text-align:center; font-size:larger">Nandoso</p>
     <table class="table table-striped spaced-table">
         <caption style="text-align:center">Nandoso Daily Specials</caption>
