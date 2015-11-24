@@ -11,11 +11,12 @@ function getSpecialsTable(specialsList) {
     var d = new Date;
     for (i = 0; i < specialsList.length; i++) {
         if (d.getDay() == specialsList[i].specialDate) {
-            var loggedIn = FB.getLoginStatus(function (response) {
+            var loggedIn;
+            FB.getLoginStatus(function (response) {
                 if (response.status == 'connected') {
-                    return 1;
+                    loggedIn = 1;
                 } else {
-                    return 0;
+                    loggedIn = 0;
                 }
             });
             console.log(loggedIn);
