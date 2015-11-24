@@ -62,11 +62,3 @@ body {
 .nav ul li a:hover {
 	color: #069;
 }
-
-/*Facebook div*/
-status{
-    float:left;
-}
-fbButton{
-    float:left;
-}
