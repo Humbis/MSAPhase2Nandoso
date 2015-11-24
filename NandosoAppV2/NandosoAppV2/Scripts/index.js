@@ -15,9 +15,10 @@ function getSpecialsTable(specialsList) {
                 if (response.status == 'connected') {
                     return true;
                 } else {
-                    return false
+                    return false;
                 }
             });
+            console.log(loggedIn);
             if (loggedIn == true || specialsList[i].isPremium == 0) {
                 var row = document.createElement("tr"); //make a row
 
