@@ -28,7 +28,7 @@ function getSpecialsTable(specialsList) {
             console.log(loggedIn);
             if ((loggedIn == 1 || specialsList[i].isPremium == 0) && onLoginClick == 0) {
                 var row = document.createElement("tr"); //make a row
-                console.log("lalallalalala");
+                console.log("This is the default table generator");
                 var name = document.createElement("td"); //make a data entrie
                 name.innerHTML = specialsList[i].name;   //set it to the name in the list of specials
                 row.appendChild(name);                   //put it into the row

@@ -9,20 +9,22 @@
     <script src="Scripts/facebookLogin.js"></script>
     <script src="Scripts/index.js"></script>
     <script src="Scripts/SpecialsModule.js"></script>
+    <script src="Scripts/jquery-navbar.js"></script>
+    <link href="Content/navStyle.css" rel="stylesheet" />
+   
     <meta charset="utf-8" />
 </head>
 <body>
     <div data-role="header">
-        <div data-role="navbar">
-            <ul>
+        <div data-role="navbar" id="nav">
+            <ul class="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="FeedbackPage.html">Feedback</a></li>
-                <li><fb:login-button scope="public_profile,email"
-                              onlogin="checkLoginState();"></fb:login-button></li> 
-                <li><div id="status"></div></li>
             </ul>
         </div>
     </div>
+    <div id="status"><fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();"></fb:login-button></div>
     <p style="text-align:center; font-size:larger">Nandoso</p>
     <table class="table table-striped spaced-table">
         <caption style="text-align:center">Nandoso Daily Specials</caption>
