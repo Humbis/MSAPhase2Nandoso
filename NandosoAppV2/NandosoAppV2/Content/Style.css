@@ -17,7 +17,7 @@ body {
 
 .nav li {
 	float: left;
-    width:50%;
+    width:33%;
 	position: relative;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .nav ul li {
-    width:50%;
+    width:33%;
 	float:left;
 }
 
